@@ -78,7 +78,7 @@ public class PinController {
         }
         return uniquePinList;
     }
-
+    //The last method added
     @DeleteMapping(path = "/delete/{id}")
     public @ResponseBody String deletePin(@PathVariable("id") Integer id){
         pinRepository.deleteById(id);
