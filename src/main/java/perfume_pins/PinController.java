@@ -66,7 +66,7 @@ public class PinController {
         }
         return missingPinList;
     }
-
+    //Checks for Single Pins
     @GetMapping(path = "/uniquePins")
     public @ResponseBody Iterable<Pin> getUniquePins() {
         ArrayList<Pin> uniquePinList = new ArrayList<Pin>();
