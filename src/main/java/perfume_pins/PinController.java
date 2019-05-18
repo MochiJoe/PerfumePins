@@ -54,7 +54,7 @@ public class PinController {
         }
         return ownedPinList;
     }
-
+    //Checks for all the Pins I don't have.
     @GetMapping(path = "/allMissing")
     public @ResponseBody Iterable<Pin> getMissingPins() {
         ArrayList<Pin> missingPinList = new ArrayList<Pin>();
