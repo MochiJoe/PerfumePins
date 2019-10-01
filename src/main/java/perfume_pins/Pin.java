@@ -14,7 +14,7 @@ public class Pin {
     private Long pinId;
     private String pinName;
     private Integer pinNumber;
-    private Blob pinImage;
+    private String pinImage;
 
     //Getters
     public Integer getId() {
@@ -33,7 +33,7 @@ public class Pin {
         return pinNumber;
     }
 
-    public Blob getPinImage() {
+    public String getPinImage() {
         return pinImage;
     }
 
@@ -54,7 +54,7 @@ public class Pin {
         this.pinNumber = pinNumber;
     }
 
-    public void setPinImage(Blob pinImage) {
+    public void setPinImage(String pinImage) {
         this.pinImage = pinImage;
     }
 }
